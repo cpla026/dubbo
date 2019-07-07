@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.coolron</groupId>
+        <artifactId>springboot-dubbo-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>springboot-dubbo-service-xml</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.coolron</groupId>
+            <artifactId>springboot-dubbo-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.coolron</groupId>
+            <artifactId>springboot-dubbo-interface</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!-- Spring Boot Web 依赖 -->
+        <!-- Web 依赖 - 包含了 spring-boot-starter-validation 依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- Spring Boot Test 依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>dubbo</artifactId>
+    <version>2.5.7</version>
+    <exclusions>
+        <exclusion>
+            <artifactId>spring</artifactId>
+            <groupId>org.springframework</groupId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+<dependency>
+    <groupId>org.apache.zookeeper</groupId>
+    <artifactId>zookeeper</artifactId>
+    <version>3.4.6</version>
+    <exclusions>
+        <exclusion>
+            <artifactId>slf4j-log4j12</artifactId>
+            <groupId>org.slf4j</groupId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+<dependency>
+    <groupId>com.github.sgroschupf</groupId>
+    <artifactId>zkclient</artifactId>
+    <version>0.1</version>
+</dependency>
+
+    </dependencies>
+
+</project>
