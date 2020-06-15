@@ -34,7 +34,7 @@
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
-            <version>3.1</version>
+            <version>3.2.2</version>
         </dependency>
 
         <!-- 导入配置文件处理器，配置文件绑定就会有提示 -->
